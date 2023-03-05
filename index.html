@@ -7,34 +7,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Business Landing</title>
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-    <!-- should comment -->
-    <style>body {background-color: rgb(145, 149, 152);}</style>
 </head>
 
 <body>
-    <header>
-        <div class="background-content">
-            <img src="img/header-background.png" alt="a background image">
+    <header class="header">
+        <div class="header__main-header">
+            <img src="img/figma-logo.png" alt="Figma logo" class="header__figma-logo">
+            <img src="img/nav-button.svg" alt="navigation button" class="header__nav-button">
         </div>
-        <nav class="navbar">
-            <div class="menu">
-                <a href="#">Home</a>
-                <a href="#">Product</a>
-                <a href="#">Pricing</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
+        <nav class="header__nav">
+            <div class="header__menu menu">
+                <a class="menu__item" href="#">Home</a>
+                <a class="menu__item" href="#">Product</a>
+                <a class="menu__item" href="#">Pricing</a>
+                <a class="menu__item" href="#">About</a>
+                <a class="menu__item" href="#">Contact</a>
             </div>
-            <div class="right-content">
-                <div class="social-media">
-                    <a href="#"><img src="img/logo-twitter.svg" alt="a twitter logo"></a>
-                    <a href="#"><img src="img/logo-facebook.svg" alt="a facebook logo"></a>
-                    <a href="#"><img src="img/logo-linkedin.svg" alt="a linkedin logo"></a>
-                </div>
-            </div>
-            <div class="center-content">
-                <img src="img/header-center.png" alt="figma land">
+            <div class="header__social-media social-media">
+                <a class="social-media__twitter" href="#"><img src="img/logo-twitter.svg" alt="a twitter logo"></a>
+                <a class="social-media__facebook" href="#"><img src="img/logo-facebook.svg" alt="a facebook logo"></a>
+                <a class="social-media__linkedin" href="#"><img src="img/logo-linkedin.svg" alt="a linkedin logo"></a>
             </div>
         </nav>
+    </header>
+    <main>
         <div class="hero">
             <div class="container">
                 <h1>The best products start with Figma</h1>
@@ -44,8 +40,6 @@
                 <button type="button">Try For Free</button>
             </div>
         </div>
-    </header>
-    <main>
         <section class="features">
             <div class="content">
                 <div class="text-content">
