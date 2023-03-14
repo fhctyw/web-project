@@ -1,0 +1,22 @@
+.header {
+    max-height: 100px;
+}
+
+.header__nav {
+    visibility: hidden;
+}
+
+.header__main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+}
+
+.header__figma-logo {
+    width: 186px;
+}
+
+.header__nav-button {
+    width: 40px;
+}

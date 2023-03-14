@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;200;300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --light-text-color: white;
+    --dark-text-color: #252B42;
+    --title-font-size: 3rem;
+    --title-font-weight: normal;
+    --paragraph-font-size: 1.75rem;
+    --paragraph-font-weight: 300;
+    --button-color: #2091F9;
+    --button-padding: 8px 50px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    text-align: center;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+body {
+    background-image: url(../img/header-background.png);
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+h2 {
+    font-size: var(--title-font-size);
+    font-weight: var(--title-font-weight);
+}
+
+p,
+a {
+    font-size: var(--paragraph-font-size);
+    font-weight: var(--paragraph-font-weight);
+}
+
+.button {
+    background-color: var(--button-color);
+    color: var(--light-text-color);
+    text-decoration: none;
+    padding: var(--button-padding);
+}
