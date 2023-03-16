@@ -1,9 +1,13 @@
 .header {
-    max-height: 100px;
+    background-image: url(../img/header-background.png);
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    min-height: var(--header-background-height);
 }
 
 .header__nav {
-    visibility: hidden;
+    display: none;
 }
 
 .header__main-header {
@@ -14,9 +18,30 @@
 }
 
 .header__figma-logo {
-    width: 186px;
+    width: 10rem;
 }
 
 .header__nav-button {
-    width: 40px;
+    width: 3rem;
+}
+
+.welcome {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0px;
+    gap: 50px;
+}
+
+.welcome__text,
+.welcome__button {
+    margin: 50px;
+}
+
+.welcome__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
 }

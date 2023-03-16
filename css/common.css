@@ -4,9 +4,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* border: red solid 1px; */
 }
 
 :root {
+    --header-background-height: 927px;
     --light-text-color: white;
     --dark-text-color: #252B42;
     --title-font-size: 3rem;
@@ -14,22 +16,20 @@
     --paragraph-font-size: 1.75rem;
     --paragraph-font-weight: 300;
     --button-color: #2091F9;
-    --button-padding: 8px 50px;
+    --button-padding: 0.7rem 4rem;
+    --button-radius: 35px;
+    --button-font-size: 1.25rem;
+    --button-font-weight: 200;
     font-family: 'Hanken Grotesk', sans-serif;
     text-align: center;
 }
 
-img {
+img,
+video {
     display: block;
     width: 100%;
 }
 
-body {
-    background-image: url(../img/header-background.png);
-    background-position-x: center;
-    background-repeat: no-repeat;
-    background-size: auto;
-}
 
 h2 {
     font-size: var(--title-font-size);
@@ -45,6 +45,10 @@ a {
 .button {
     background-color: var(--button-color);
     color: var(--light-text-color);
-    text-decoration: none;
     padding: var(--button-padding);
+    border-radius: var(--button-radius);
+    font-size: var(--button-font-size);
+    font-weight: var(--button-font-weight);
+    text-decoration: none;
+    inline-size: max-content;
 }
