@@ -50,5 +50,5 @@ a {
     font-size: var(--button-font-size);
     font-weight: var(--button-font-weight);
     text-decoration: none;
-    inline-size: max-content;
+    /* inline-size: max-content; */
 }
