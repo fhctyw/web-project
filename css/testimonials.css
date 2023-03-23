@@ -1,0 +1,29 @@
+.testimonials__logo {
+    width: 40%;
+}
+
+.testimonials__user-block {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.testimonials__user-block>.testimonials__user-photo {
+    width: 40px;
+    height: 40px;
+}
+
+.testimonials__text {
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonials__text>.text {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+
+.testimonials__text>.job {
+    font-size: 10px;
+}

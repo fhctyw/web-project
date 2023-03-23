@@ -1,0 +1,20 @@
+.welcome {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0px;
+    gap: 50px;
+}
+
+.welcome__text,
+.welcome__button {
+    margin: 50px;
+}
+
+.welcome__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}

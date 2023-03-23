@@ -1,0 +1,17 @@
+.newsletter__form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.newsletter__form-email {
+    background: #F4F4F4;
+    border: 1px solid #E8E8E8;
+    border-radius: var(--button-radius);
+    padding: 10px;
+}
+
+.newsletter__form-email::placeholder {
+    color: black;
+    padding-left: 10px;
+}

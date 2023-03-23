@@ -1,0 +1,63 @@
+.contact__social-media {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact__details {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+}
+
+.details__detail {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.details__detail>.detail__detail-icon {
+    width: 25px;
+    height: auto;
+}
+
+.details__detail>.detail__detail-data {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+    padding: 52px 49px;
+    border-radius: 20px;
+    border: 1px solid #DDDDDD;
+    box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+}
+
+.contact__form>.user-name,
+.contact__form>.user-email,
+.contact__form>.user-message {
+    padding: 10px;
+    background: #F5F5F5;
+    border: 1px solid #E8E8E8;
+    width: 100%;
+}
+
+.contact__form>.user-name,
+.contact__form>.user-email {
+    border-radius: 20px;
+}
+
+.contact__form>.user-message {
+    height: 150px;
+}
+
+.contact__form>.user-name::placeholder,
+.contact__form>.user-email::placeholder,
+.contact__form>.user-message::placeholder {
+    color: black;
+}

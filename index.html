@@ -108,9 +108,9 @@
             <img class="newsletter__human-letter" src="img/human-letter.png" alt="human and letter">
             <p class="newsletter__subscribe-text">Subscribe to our Newsletter</p>
             <p class="newsletter__sub-subscribe-text">Available exclusivery on Figmaland</p>
-            <form action="#" method="post">
-                <input type="email" name="email" placeholder="Your Email">
-                <button class="newsletter__button button" type="submit">Subscribe</button>
+            <form class="newsletter__form" action="#" method="post">
+                <input class="newsletter__form-email" type="email" name="email" placeholder="Your Email">
+                <button class="newsletter__form-button button" type="submit">Subscribe</button>
             </form>
         </section>
         <section class="partner" id="partner">
@@ -162,16 +162,17 @@
                 want a simple way to plan their schedule.</p>
             <div class="testimonials__user-block">
                 <img class="testimonials__user-photo" src="img/avatar.png" alt="a round avatar">
-                <p class="testimonials__user-text">Organize across</p>
-                <p class="testimonials__user-job">Ui designer</p>
+                <div class="testimonials__text text-block">
+                    <p class="text-block text">Organize across</p>
+                    <p class="text-block job">Ui designer</p>
+                </div>
             </div>
             <a href="#" class="testimonials__button button">More Testimonials</a>
         </section>
         <section class="pricing" id="pricing">
             <div class="pricing__text">
                 <h2 class="pricing__title">Pricing</h2>
-                <p class="pricing__sub-text">Most calendars are designed for teams. Slate is designed for freelancers
-                </p>
+                <p class="pricing__sub-text">Most calendars are designed for teams.</p>
             </div>
             <div class="pricing__cards cards">
                 <div class="cards__card card">
@@ -179,8 +180,10 @@
                     <h6 class="card__text">Organize across all apps by hand</h6>
                     <div class="card__price-block">
                         <p class="card__price-number">0</p>
-                        <p class="card__price-symbol">$</p>
-                        <p class="card__period">per mouth</p>
+                        <div class="card__price-block-nearby">
+                            <p class="card__price-symbol">$</p>
+                            <p class="card__period">per mouth</p>
+                        </div>
                     </div>
                     <ul class="card__features features">
                         <li class="features__feature">Pricing Feature</li>
@@ -192,12 +195,14 @@
                     <a href="#" class="card__button button">Order Now</a>
                 </div>
                 <div class="cards__card main-card">
-                    <h3 class="main-card__type">FREE</h3>
+                    <h3 class="main-card__type">STANDARD</h3>
                     <h6 class="main-card__text">Organize across all apps by hand</h6>
                     <div class="main-card__price-block">
-                        <p class="main-card__price-number">0</p>
-                        <p class="main-card__price-symbol">$</p>
-                        <p class="main-card__period">per mouth</p>
+                        <p class="main-card__price-number">10</p>
+                        <div class="main-card__price-block-nearby">
+                            <p class="main-card__price-symbol">$</p>
+                            <p class="main-card__period">per mouth</p>
+                        </div>
                     </div>
                     <ul class="main-card__features features">
                         <li class="features__feature">Pricing Feature</li>
@@ -209,12 +214,14 @@
                     <a href="#" class="main-card__button button">Order Now</a>
                 </div>
                 <div class="cards__card card">
-                    <h3 class="card__type">FREE</h3>
+                    <h3 class="card__type">BUSINESS</h3>
                     <h6 class="card__text">Organize across all apps by hand</h6>
                     <div class="card__price-block">
                         <p class="card__price-number">0</p>
-                        <p class="card__price-symbol">$</p>
-                        <p class="card__period">per mouth</p>
+                        <div class="card__price-block-nearby">
+                            <p class="card__price-symbol">$</p>
+                            <p class="card__period">per mouth</p>
+                        </div>
                     </div>
                     <ul class="card__features features">
                         <li class="features__feature">Pricing Feature</li>
@@ -254,15 +261,15 @@
             </div>
             <form class="contact__form" action="#" method="post">
                 <input type="text" class="user-name" id="userName" placeholder="Your Name">
-                <input type="email" name="user-name" id="userEmail1" placeholder="Your Email">
+                <input type="email" class="user-email" id="userEmail1" placeholder="Your Email">
                 <textarea class="user-message" id="userMessage">Your Message</textarea>
-                <button type="submit">Send</button>
+                <button class="contact__form-button button" type="submit">Send</button>
             </form>
         </section>
     </main>
     <footer class="footer">
         <div class="footer__pages">
-            <h2 class="footer__pages__title">Pages</h2>
+            <h2 class="footer__pages-title">Pages</h2>
             <div class="footer__pages-items items">
                 <a href="#" class="items__item">Home</a>
                 <a href="#newsletter" class="items__item">Newsletter</a>
@@ -273,15 +280,21 @@
         </div>
         <div class="footer__details details">
             <div class="details__detail">
-                <img class="detail__detail-icon" src="img/map-point.svg" alt="map pointer">
+                <img class="detail__detail-icon" src="img/footer-map-point.svg" alt="map pointer">
                 <p class="detail__detail-data">7480 Mockingbird Hill undefined</p>
             </div>
             <div class="details__detail">
-                <img class="detail__detail-icon" src="img/phone.svg" alt="map pointer">
+                <img class="detail__detail-icon" src="img/footer-phone.svg" alt="map pointer">
                 <p class="detail__detail-data">(239) 555-0108</p>
             </div>
         </div>
+        <div class="footer__social-media social-media">
+            <a class="social-media__twitter" href="#"><img src="img/footer-twitter.svg" alt="a twitter logo"></a>
+            <a class="social-media__facebook" href="#"><img src="img/footer-facebook.svg" alt="a facebook logo"></a>
+            <a class="social-media__linkedin" href="#"><img src="img/footer-linkedin.svg" alt="a linkedin logo"></a>
+        </div>
     </footer>
+    <script src="js/index.js"></script>
 </body>
 
 </html>

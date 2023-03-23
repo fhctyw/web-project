@@ -1,4 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;200;300;400;500&display=swap');
+@font-face {
+    font-family: 'Graphik';
+    src: url('../fonts/graphik-regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Graphik';
+    src: url('../fonts/graphik-bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
 
 * {
     margin: 0;
@@ -16,11 +30,11 @@
     --paragraph-font-size: 1.75rem;
     --paragraph-font-weight: 300;
     --button-color: #2091F9;
-    --button-padding: 0.7rem 4rem;
+    --button-padding: 10px 50px;
     --button-radius: 35px;
     --button-font-size: 1.25rem;
     --button-font-weight: 200;
-    font-family: 'Hanken Grotesk', sans-serif;
+    font-family: 'Graphik', sans-serif;
     text-align: center;
 }
 
@@ -40,6 +54,7 @@ p,
 a {
     font-size: var(--paragraph-font-size);
     font-weight: var(--paragraph-font-weight);
+    text-decoration: none;
 }
 
 .button {
@@ -50,5 +65,13 @@ a {
     font-size: var(--button-font-size);
     font-weight: var(--button-font-weight);
     text-decoration: none;
-    /* inline-size: max-content; */
+    border-color: transparent;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 50px;
 }

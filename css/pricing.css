@@ -1,0 +1,73 @@
+.pricing {
+    background-color: #252B42;
+    color: white;
+}
+
+.pricing__cards>.cards__card {
+    background-color: white;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 30px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.cards__card>ul {
+    list-style-type: none;
+}
+
+.pricing__cards>.cards__card>.card__price-block,
+.pricing__cards>.cards__card>.main-card__price-block {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pricing__cards>.cards__card>.card__price-block>.card__price-number,
+.pricing__cards>.cards__card>.main-card__price-block>.main-card__price-number {
+    font-size: 74px;
+    font-weight: 700;
+    line-height: 84px;
+}
+
+.pricing__cards>.cards__card>.card__price-block>.card__price-block-nearby>.card__price-symbol,
+.pricing__cards>.cards__card>.main-card__price-block>.main-card__price-block-nearby>.main-card__price-symbol {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: left;
+}
+
+.pricing__cards>.cards__card>.card__price-block>.card__price-block-nearby>.card__period,
+.pricing__cards>.cards__card>.main-card__price-block>.main-card__price-block-nearby>.main-card__period {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+}
+
+.pricing__cards>.cards__card>.card__features,
+.pricing__cards>.cards__card>.main-card__features {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pricing__cards>.cards__card.main-card {
+    background-color: #2091F9;
+    color: white;
+}
+
+.pricing__cards>.cards__card.main-card .button {
+    background-color: white;
+    color: #2091F9;
+    padding: var(--button-padding);
+    border-radius: var(--button-radius);
+    font-size: var(--button-font-size);
+    font-weight: var(--button-font-weight);
+    text-decoration: none;
+    border-color: transparent;
+}
